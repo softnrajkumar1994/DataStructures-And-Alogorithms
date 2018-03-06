@@ -5,6 +5,11 @@ public abstract class Sort
 {
 	public int[] data;
 
+	public Sort(int[] data)
+	{
+		this.data = data;
+	}
+
 	public void doAscendingSort()
 	{
 		doSort(true);
@@ -13,11 +18,6 @@ public abstract class Sort
 	public void doDescendingSort()
 	{
 		doSort(false);
-	}
-
-	public Sort(int[] data)
-	{
-		this.data = data;
 	}
 
 	public abstract void doSort(boolean isasc);
