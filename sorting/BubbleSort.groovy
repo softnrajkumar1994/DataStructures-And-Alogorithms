@@ -13,7 +13,6 @@ class BubbleSort extends Sort
 
 	public void doSort(boolean isasc)
 	{
-		println "\nBubble "+ isasc == true ? "Ascending":"Descending"+ " Sort Started With Elements "+data;
 		for(int i=0;i<data.length;i++)
 		{
 			for(int j=0;j<data.length;j++)
@@ -34,7 +33,6 @@ class BubbleSort extends Sort
 				}
 			}
 		}
-		println "\nBubble Sort Ended With Result :"+data;
 	}
 
 	public static void main(String[] args)
