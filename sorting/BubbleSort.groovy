@@ -2,6 +2,8 @@
 package sorting;
 
 import sorting.Sort;
+import util.ArrayUtils;
+
 class BubbleSort extends Sort
 {
 	//Bubble sort compares each element with other elements in order to sort them.its very poor sorting technology when the size of the array is large.Time complexity for BubbleSort is BigO(n pow 2) always.Here n denotes number of elements.
@@ -20,16 +22,12 @@ class BubbleSort extends Sort
 				//for ascending order sort
 				if(data[i] < data[j] && isasc)
 				{
-					int temp = data[i];
-					data[i] = data[j];
-					data[j] = temp;
+					ArrayUtils.swap(data,i,j);
 				}
 				//for descending order sort
 				else if(data[i] > data[j] && !isasc)
 				{
-					int temp = data[i];
-					data[i] = data[j];
-					data[j] = temp;
+					ArrayUtils.swap(data,i,j);
 				}
 			}
 		}
