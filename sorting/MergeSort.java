@@ -2,13 +2,13 @@
 package sorting;
 
 import sorting.Sort;
-import utils.ArrayUtils;
+import util.ArrayUtils;
 
-class ShellSort extends Sort
+class MergeSort extends Sort
 {
-	public ShellSort(int[] data)
+	public MergeSort(int[] data)
 	{
-		this.data = data;
+		super(data);
 	}
 
 	public void doSort(boolean isasc)
@@ -18,8 +18,8 @@ class ShellSort extends Sort
 
 	public static void main(String[] args)
 	{
-		int[] a = [100,100,9,2,4,50,34,29,20,38,45,28,84];
-		ShellSort bs = new ShellSort(a);
+		int[] a = {100,100,9,2,4,50,34,29,20,38,45,28,84};
+		MergeSort bs = new MergeSort(a);
 		bs.doAscendingSort();
 		bs.doDescendingSort();
 	}

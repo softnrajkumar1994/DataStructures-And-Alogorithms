@@ -47,7 +47,7 @@ class SelectionSort extends Sort
 
 	public static void main(String[] args)
 	{
-		int[] a = [100,100,9,2,4,50,34,29,20,38,45,28,84];
+		int[] a = {100,100,9,2,4,50,34,29,20,38,45,28,84};
 		SelectionSort bs = new SelectionSort(a);
 		bs.doAscendingSort();
 		bs.doDescendingSort();
